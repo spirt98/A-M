@@ -42,48 +42,99 @@
 	* --------------------------------------- */
 	#section1{
 		background-image: url(Изображения/1.jpg);
-		background-size: 100% 100%;
+		padding: 6% 0 0 0;
+        height: 90%;
+        width: 90%;
+        flex-shrink: 0;
+        object-fit: cover;
 	}
 	#section2{
 		background-image: url(Изображения/2.jpg);
-		background-size: 100% 100%;
+		padding: 6% 0 0 0;
+        height: 90%;
+        width: 90%;
+        flex-shrink: 0;
+        object-fit: cover;
 	}
 	#section3{
 		background-image: url(Изображения/3.jpg);
-		background-size: 100% 100%;
+		padding: 6% 0 0 0;
+        height: 90%;
+        width: 90%;
+        flex-shrink: 0;
+        object-fit: cover;
 	}
 	#section3 h1{
 		color: #000;
 	}
 	#section4{
 		background-image: url(Изображения/4.jpg);
-		background-size: 100% 100%;
+		padding: 6% 0 0 0;
+        height: 90%;
+        width: 90%;
+        flex-shrink: 0;
+        object-fit: cover;
 	}
-	
-	#bg {
-    height: 300%;
-    width: 100%;
-    position: relative;
-	}	
-	#bg img {
-    object-fit: 100% 100%;
+	#section4 h1{
+		color: #000;
+	}
 
+
+
+	#section1 h1{
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		top: 30px;
+		color: #fff;
+	}
+
+	#section2 .intro{
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		top: 30px;
+	}
+	#section2 h1,
+	#section2 p{
+		text-shadow: 1px 5px 20px #000;
+	}
+
+	#section3 h1,
+	#section3 p{
+		text-shadow: 1px 5px 20px #000;
+		color: #fff;
+	
+    }
+	#section4 h1,
+	#section4 p{
+		text-shadow: 1px 5px 20px #000;
+		color: #fff;
+	}
+
+	#infoMenu li a{
+			color: #fff;
 	}
     </style>
   <body>
-	<!-- <div id="bg">
-		<img src="Изображения/1.jpg">
-	</div> -->
-	<div>
-        <div id="bg" > 
-			<img src="Изображения/1.jpg">
-		</div>
-        <div  id="section2">
+    <div id="pagepiling">
+        <div class="section" id="section1" > 
         </div>
-        <div id="section3">
+        <div class="section" id="section2">
         </div>
-        <div id="section4">
+        <div class="section" id="section3">
+        </div>
+        <div class="section" id="section4">
         </div>
     </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#pagepiling').pagepiling({
+                // sectionsColor: ['#f2f2f2', '#4BBFC3', 'red', 'blue'],
+            });
+        });
+    </script>
   </body>
 </html>
