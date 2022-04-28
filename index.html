@@ -42,11 +42,7 @@
 	* --------------------------------------- */
 	#section1{
 		background-image: url(Изображения/1.jpg);
-		padding: 6% 0 0 0;
-        height: 90%;
-        width: 90%;
-        flex-shrink: 0;
-        object-fit: cover;
+		background-size: 100% 100%;
 	}
 	#section2{
 		background-image: url(Изображения/2.jpg);
@@ -124,15 +120,15 @@
     position: relative;
 	}	
 	#bg img {
-    object-fit: cover;
+    object-fit: 100% 100%;
 
 	}
     </style>
   <body>
-	<div id="bg">
+	<!-- <div id="bg">
 		<img src="Изображения/1.jpg">
-	</div>
-	<!-- <div id="pagepiling">
+	</div> -->
+	<div id="pagepiling">
         <div class="section" id="section1" > 
         </div>
         <div class="section" id="section2">
@@ -141,7 +137,7 @@
         </div>
         <div class="section" id="section4">
         </div>
-    </div> -->
+    </div>
     <script type="text/javascript">
         $(document).ready(function() {
             $('#pagepiling').pagepiling({
